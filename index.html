@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css"> <!-- Link css-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Landing page</title>
+</head>
+<body>
+
+    <main>
+   <section class="wallpaper"></section>
+    
+   <section class="login">
+       <div class="login__form">    <img src="image/logo.jpeg" class="login__logo" alt="Logo">   
+        <p class="login__title">Please, login to continue.</p>
+        </div>
+            <div class="login__input">
+            <form class="login-card-form">
+                <div class="form-item">
+                <label for="user">User
+                    <span class="material-symbols-outlined">  person </span></label>
+                <input type="text" placeholder="Your e-mail" id="user" autocomplete="off" required autofocus>
+                </div>
+                <div class="form-item">
+                  
+                 <label for="pass">Pass
+                    <span class="material-symbols-outlined">lock</span> 
+                    
+                </label>
+                <span id="eye" class="material-symbols-outlined"></span>
+                 <input type="password" placeholder="Your password" id="pass" autocomplete="off" required>
+                     <i id="togglePassword" class="material-symbols-outlined">
+                        visibility
+                    </i>
+                </div>
+                    <div class="form-item-other">
+                     <div class="checkbox">
+                        <button type="submit" onclick="validateForm(); return false " class="login__button" placeholder="Login">Login</button>
+                    </div>
+                    <div class="container">
+                        <a href="#">Forgot passoword?</a>
+                    </div>
+                    </div>
+                </form>
+                </div>  
+        </section>
+   </main> 
+   <script src="./script.js"></script> <!-- Link JavaScript -->
+</body>
+</html>

@@ -1,0 +1,36 @@
+body {
+    margin: 0 ;
+    padding: 0 ;
+    height: 100vh;
+    max-width: 1200px;
+
+    display:grid;
+    background-color: black;
+    color: white;
+
+    grid-template-areas:
+    "main aside";
+
+    grid-template-rows: 30px 1fr 40px;
+    grid-template-columns: 1fr 80px;
+}
+
+
+main {
+    grid-area: mai ;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+    align-items: center;
+}
+
+article {
+    display: flex;
+    grid-area: article;
+}
